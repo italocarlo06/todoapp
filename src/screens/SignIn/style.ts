@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-const splashStyles = StyleSheet.create({
+export const signInStyles = StyleSheet.create({
     container: {
         backgroundColor: "#EEEEEE",
         flexDirection: "column",
@@ -15,10 +15,10 @@ const splashStyles = StyleSheet.create({
         top: -94,
         left: -66
     },
-    imageSplash: {
-        width: 187,
-        height: 170,
-        marginTop: 200,
+    imageLogin: {
+        width: 180,
+        height: 180,
+        marginTop: 33,
     },
     splashText: {
         marginTop: 80,
@@ -30,7 +30,19 @@ const splashStyles = StyleSheet.create({
         justifyContent: "center",
         fontFamily: "Poppins_700Bold",
         fontSize: 22,
-        width: "100%"
+        width: "100%",
+        color: 'rgba(0, 0, 0, 0.90)',
+        paddingVertical: 10
+    },
+    subTitle: {
+        textAlign: "center",
+        alignItems: "center",
+        justifyContent: "center",
+        fontFamily: "Poppins_400Regular",
+        fontSize: 15,
+        width: "100%",
+        color: 'rgba(0, 0, 0, 0.90)',
+        paddingVertical: 8
     },
     textInfo: {
         textAlign: "center",
@@ -39,11 +51,20 @@ const splashStyles = StyleSheet.create({
         marginHorizontal: 50,
         fontSize: 15,
         fontFamily: "Poppins_600SemiBold"
-    }
+    },
+    account: {
+        fontFamily: "Poppins_600SemiBold",
+        fontSize: 15,
+        color: 'rgba(0, 0, 0, 0.80)',
+    },
+    signUp: {
+        fontFamily: "Poppins_700Bold",
+        fontSize: 15,
+        color: '#62D2C3',
+    },
+
 
 
 
 });
-
-export { splashStyles }
 

@@ -1,4 +1,6 @@
 import { Text } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Splash } from './src/screens/Splash';
 import {
   useFonts,
@@ -21,8 +23,11 @@ import {
   Poppins_900Black,
   Poppins_900Black_Italic,
 } from '@expo-google-fonts/poppins';
+import { Login } from './src/screens/Login';
+import { SignIn } from './src/screens/SignIn';
 
 export default function App() {
+  const Stack = createNativeStackNavigator()
   let [fontsLoaded] = useFonts({
     Poppins_100Thin,
     Poppins_100Thin_Italic,
@@ -43,10 +48,29 @@ export default function App() {
     Poppins_900Black,
     Poppins_900Black_Italic,
   });
-  if (!fontsLoaded) 
+  if (!fontsLoaded)
     return <Text> Loading... </Text>;
   return (
-    <Splash />
+    <NavigationContainer >
+      <Stack.Navigator initialRouteName='Home'>
+        <Stack.Screen
+          name='Splash'
+          component={Splash}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name='Login'
+          component={Login}
+          options={{ headerShown: false }}
+        />
+
+        <Stack.Screen
+          name='SignIn'
+          component={SignIn}
+          options={{ headerShown: false }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
