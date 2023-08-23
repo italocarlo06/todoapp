@@ -17,7 +17,7 @@ export function SignIn({ navigation }: Props) {
                 <View style={{ alignItems: "center", justifyContent: "center", width: "100%" }}>
                     <Image style={signInStyles.imageLogin} source={require("../../../assets/login.png")} />
                 </View>
-                <Input label="Email" secureTextEntry={true} placeholder="mary.elliot@mail.com" />
+                <Input label="Email" placeholder="mary.elliot@mail.com" />
                 <Input label="Password" secureTextEntry={true} placeholder="*****" />
                 <Text style={[signInStyles.signUp, { width: "100%", textAlign: "right" }]}>Forgot Password?</Text>
             </View>

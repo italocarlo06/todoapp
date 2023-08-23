@@ -16,9 +16,9 @@ export function Login({ navigation }: Props) {
                 <Text style={[loginStyles.title, { paddingTop: 180 }]}>Welcome OnBoard</Text>
                 <Text style={loginStyles.subTitle}>Lets help you in completing your tasks</Text>
                 <Input label="Full Name" keyboardType="default" placeholder="Mary Elliot" />
-                <Input label="Email" secureTextEntry={true} placeholder="mary.elliot@mail.com" />
+                <Input label="Email" placeholder="mary.elliot@mail.com" />
                 <Input label="Password" secureTextEntry={true} placeholder="*****" />
-                <Input label="Confirm Password" keyboardType="visible-password" placeholder="*****" />
+                <Input label="Confirm Password" secureTextEntry={true} placeholder="*****" />
             </View>
             <TextButton label={"Register"} marginTop={140} />
             <View style={{
