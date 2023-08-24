@@ -1,4 +1,3 @@
-import Toast from 'react-native-toast-message';
 import { Image, Text, View } from "react-native";
 import { TextButton } from "../../components/TextButton";
 import { splashStyles } from "./style";
@@ -8,13 +7,7 @@ interface Props {
 }
 
 export function Splash({ navigation }: Props) {
-    function handleShow(){
-        Toast.show({
-            type: 'info',
-            text1: 'This is an info message'
-          });
-    }
-    
+
     return (
         <View style={splashStyles.container}>
             <Image style={splashStyles.imageShape} source={require("../../../assets/shape.png")} />
@@ -22,7 +15,7 @@ export function Splash({ navigation }: Props) {
             <View style={splashStyles.splashText}>
                 <Text style={splashStyles.title}>Get things done with TODO</Text>
                 <Text style={splashStyles.textInfo}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere gravida purus id eu condimentum est diam quam. Condimentum blandit diam.</Text>
-            </View>            
+            </View>
             <TextButton label={"Get Started"} marginTop={140} onClick={() => { navigation.navigate('SignIn') }} />
         </View>)
 }

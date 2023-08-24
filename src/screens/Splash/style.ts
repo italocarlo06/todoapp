@@ -22,20 +22,18 @@ const splashStyles = StyleSheet.create({
     },
     splashText: {
         marginTop: 80,
-        textAlign: "center"
-    },
-    title: {
         textAlign: "center",
         alignItems: "center",
-        justifyContent: "center",
+        justifyContent: "center"
+    },
+    title: {
+
         fontFamily: "Poppins_700Bold",
         fontSize: 22,
         width: "100%"
     },
     textInfo: {
         textAlign: "center",
-        alignItems: "center",
-        justifyContent: "center",
         marginHorizontal: 50,
         fontSize: 15,
         fontFamily: "Poppins_600SemiBold"
