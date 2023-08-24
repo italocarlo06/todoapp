@@ -1,3 +1,4 @@
+import Toast from 'react-native-toast-message';
 import { Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -52,7 +53,8 @@ export default function App() {
   if (!fontsLoaded)
     return <Text> Loading... </Text>;
   return (
-    <NavigationContainer >
+  <>    
+    <NavigationContainer >      
       <Stack.Navigator initialRouteName='Home'>
         <Stack.Screen
           name='Splash'
@@ -78,6 +80,8 @@ export default function App() {
         />
       </Stack.Navigator>
     </NavigationContainer>
+    <Toast />
+    </>
   );
 }
 
