@@ -43,7 +43,6 @@ export const dashboardStyles = StyleSheet.create({
         fontFamily: "Poppins_700Bold",
         fontSize: 22,
         paddingTop: 18,
-
     },
 
 });
