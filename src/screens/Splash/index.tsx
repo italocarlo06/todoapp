@@ -15,6 +15,6 @@ export function Splash({ navigation }: Props) {
                 <Text style={splashStyles.title}>Get things done with TODO</Text>
                 <Text style={splashStyles.textInfo}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere gravida purus id eu condimentum est diam quam. Condimentum blandit diam.</Text>
             </View>
-            <TextButton label={"Get Started"} marginTop={140} onClick={() => { navigation.navigate('SignIn') }} />
+            <TextButton label={"Get Started"} marginTop={140} onClick={() => { navigation.navigate('Dashboard') }} />
         </View>)
 }

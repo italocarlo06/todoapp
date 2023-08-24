@@ -30,10 +30,9 @@ export function SignIn({ navigation }: Props) {
                 paddingTop: 10
             }}>
                 <Text style={signInStyles.account}>Don't have an account?</Text>
-                <TouchableOpacity onPress={() => { navigation.navigate('Login', {}) }}>
+                <TouchableOpacity onPress={() => { navigation.navigate('Register', {}) }}>
                     <Text style={signInStyles.signUp}>Sign Up</Text>
                 </TouchableOpacity>
             </View>
-
         </View>)
 }

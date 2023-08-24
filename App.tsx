@@ -23,8 +23,9 @@ import {
   Poppins_900Black,
   Poppins_900Black_Italic,
 } from '@expo-google-fonts/poppins';
-import { Login } from './src/screens/Login';
+import { Register } from './src/screens/Register';
 import { SignIn } from './src/screens/SignIn';
+import { Dashboard } from './src/screens/Dashboard';
 
 export default function App() {
   const Stack = createNativeStackNavigator()
@@ -59,14 +60,20 @@ export default function App() {
           options={{ headerShown: false }}
         />
         <Stack.Screen
-          name='Login'
-          component={Login}
+          name='Register'
+          component={Register}
           options={{ headerShown: false }}
         />
 
         <Stack.Screen
           name='SignIn'
           component={SignIn}
+          options={{ headerShown: false }}
+        />
+
+        <Stack.Screen
+          name='Dashboard'
+          component={Dashboard}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

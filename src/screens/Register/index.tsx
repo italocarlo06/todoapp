@@ -8,7 +8,7 @@ interface Props {
     navigation: any; // Add type for navigation prop
 }
 
-export function Login({ navigation }: Props) {
+export function Register({ navigation }: Props) {
     return (
         <View style={loginStyles.container}>
             <View style={{ paddingHorizontal: 10, width: "100%", gap: 5 }}>
