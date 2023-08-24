@@ -12,8 +12,8 @@ export const signInStyles = StyleSheet.create({
         position: "absolute",
         width: 290,
         height: 258,
-        top: -94,
-        left: -66
+        top: -100,
+        left: -100
     },
     imageLogin: {
         width: 180,
